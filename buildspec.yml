@@ -1,0 +1,21 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies not required"
+
+  build:
+    commands:
+      - echo "Building mywebapp website"
+      - test -f index.html
+      - test -f style.css
+      - test -f script.js
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - index.html
+    - style.css
+    - script.js
